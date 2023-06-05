@@ -40,7 +40,7 @@ app.use((error,req, res, next)=>{
     const {status, message} = error;
     res.status(status).json({message: message});
 })
-mongoose.connect('mongodb+srv://root:root@cluster0.vnrailt.mongodb.net/messages?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://blah:balh@cluster012131.vnrailttete.mongodb.net/messages?retryWrites=true&w=majority')
 .then(result=>{
     app.listen(4000);
 })
